@@ -16,12 +16,8 @@ cask "ringtime-widget" do
   ]
 
   caveats <<~EOS
-    This app is self-signed, not notarized. Install without the quarantine flag:
-
-      brew install --cask --no-quarantine ringtime-ai/tap/ringtime-widget
-
-    or approve it once after first launch via
-    System Settings → Privacy & Security → "Open Anyway".
+    This app is self-signed, not notarized. On first launch macOS will block it —
+    approve it once via System Settings → Privacy & Security → "Open Anyway".
 
     Then add your read-only DB URL in the widget's Settings (gear icon).
   EOS
