@@ -7,7 +7,7 @@ cask "ringtime-widget" do
   desc "Menu-bar monitor for Ringtime environments (live interactions, outcomes, pipeline)"
   homepage "https://github.com/Ringtime-ai/homebrew-tap"
 
-  depends_on macos: ">= :sonoma"
+  depends_on macos: :sonoma
 
   app "RingtimeWidget.app"
 
