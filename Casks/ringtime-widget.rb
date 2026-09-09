@@ -1,24 +1,27 @@
 cask "ringtime-widget" do
-  version "1.0.1"
-  sha256 "d72682f1e72c7f5fd0b77fc0b57e9a03e27fe25ecb8444977c4a7765488a0654"
+  version "1.1.0"
+  sha256 "ed596956c4b3d28e054909b941759966247c711006fb5346fd005d096540a25f"
 
   url "https://github.com/Ringtime-ai/homebrew-tap/releases/download/ringtime-widget-v#{version}/RingtimeWidget-#{version}.zip"
   name "Ringtime Widget"
-  desc "Menu-bar monitor for Ringtime environments (live interactions, outcomes, pipeline)"
+  desc "Live Calls and WhatsApp counts for Ringtime production and staging"
   homepage "https://github.com/Ringtime-ai/homebrew-tap"
 
   depends_on macos: :sonoma
+  depends_on formula: "awscli"
+  depends_on cask: "session-manager-plugin"
 
   app "RingtimeWidget.app"
 
-  zap trash: [
-    "~/Library/Application Support/RingtimeWidget",
-  ]
+  zap trash: "~/Library/Application Support/RingtimeWidget"
 
   caveats <<~EOS
-    This app is self-signed, not notarized. On first launch macOS will block it —
-    approve it once via System Settings → Privacy & Security → "Open Anyway".
+    Install Ringtime Hat using the team setup guide and run hat init once.
+    Open the widget and choose Connect AWS. You need an approved tunnel-capable
+    AWS profile and a read-only database password for each environment.
+    The app discovers the connection details and stores passwords in Keychain.
 
-    Then add your read-only DB URL in the widget's Settings (gear icon).
+    This build is self-signed, not notarized. If macOS blocks first launch,
+    approve it in System Settings → Privacy & Security → Open Anyway.
   EOS
 end
