@@ -1,6 +1,6 @@
 cask "ringtime-widget" do
-  version "1.1.0"
-  sha256 "ed596956c4b3d28e054909b941759966247c711006fb5346fd005d096540a25f"
+  version "1.2.0"
+  sha256 "68eb76cdd158bd46749dbec0d4bf73002152b9f922939ada5859e31fb0f359f3"
 
   url "https://github.com/Ringtime-ai/homebrew-tap/releases/download/ringtime-widget-v#{version}/RingtimeWidget-#{version}.zip"
   name "Ringtime Widget"
@@ -21,7 +21,7 @@ cask "ringtime-widget" do
     AWS profile and a read-only database password for each environment.
     The app discovers the connection details and stores passwords in Keychain.
 
-    This build is self-signed, not notarized. If macOS blocks first launch,
+    This build is not notarized. If macOS blocks first launch,
     approve it in System Settings → Privacy & Security → Open Anyway.
   EOS
 end
