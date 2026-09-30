@@ -1,6 +1,6 @@
 cask "ringtime-widget" do
-  version "1.4.0"
-  sha256 "252e7c891da1cc657a24bc16d3d708bdef554156b76a4da10acef4994b732011"
+  version "1.4.1"
+  sha256 "5c6ad9f9476165e8e4c9173daf021168c8727e408fc304fb97cb9dce8c9acfe9"
 
   url "https://github.com/Ringtime-ai/homebrew-tap/releases/download/ringtime-widget-v#{version}/RingtimeWidget-#{version}.zip"
   name "Ringtime Widget"
