@@ -1,6 +1,6 @@
 cask "ringtime-widget" do
-  version "1.5.0"
-  sha256 "573a39996b401ba54e2e8f218ee32656b848c382f9a0485626e1f9e35528d8e4"
+  version "1.5.1"
+  sha256 "7cd49b06dd0234d01c9efdbca0e89d9ffaf782b7cd0960063d789e0b566a90bd"
 
   url "https://github.com/Ringtime-ai/homebrew-tap/releases/download/ringtime-widget-v#{version}/RingtimeWidget-#{version}.zip"
   name "Pingtime"
@@ -16,10 +16,8 @@ cask "ringtime-widget" do
   zap trash: "~/Library/Application Support/RingtimeWidget"
 
   caveats <<~EOS
-    Install Ringtime Hat using the team setup guide and run hat init once.
-    Open the widget and choose Connect AWS. You need an approved tunnel-capable
-    AWS profile and a read-only database password for each environment.
-    The app discovers the connection details and stores passwords in Keychain.
+    Open Pingtime from the menu bar, then Settings → Sign in with Ringtime.
+    If macOS asks for Keychain access, choose Always Allow.
 
     This build is not notarized. If macOS blocks first launch,
     approve it in System Settings → Privacy & Security → Open Anyway.
