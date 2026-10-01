@@ -1,6 +1,6 @@
 cask "ringtime-widget" do
-  version "1.5.2"
-  sha256 "e873eac5b8cdb9d527e04b36418d504f536a7e788a80fbaa8071160fdeb6e492"
+  version "1.6.0"
+  sha256 "ea4144f57ec5ba757ee3e4a4875c045279de0f64a82a32046fd0f4b53d84e4f6"
 
   url "https://github.com/Ringtime-ai/homebrew-tap/releases/download/ringtime-widget-v#{version}/RingtimeWidget-#{version}.zip"
   name "Pingtime"
@@ -8,8 +8,6 @@ cask "ringtime-widget" do
   homepage "https://github.com/Ringtime-ai/homebrew-tap"
 
   depends_on macos: :sonoma
-  depends_on formula: "awscli"
-  depends_on cask: "session-manager-plugin"
 
   app "RingtimeWidget.app"
 
