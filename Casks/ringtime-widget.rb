@@ -1,9 +1,9 @@
 cask "ringtime-widget" do
-  version "1.4.1"
-  sha256 "5c6ad9f9476165e8e4c9173daf021168c8727e408fc304fb97cb9dce8c9acfe9"
+  version "1.5.0"
+  sha256 "573a39996b401ba54e2e8f218ee32656b848c382f9a0485626e1f9e35528d8e4"
 
   url "https://github.com/Ringtime-ai/homebrew-tap/releases/download/ringtime-widget-v#{version}/RingtimeWidget-#{version}.zip"
-  name "Ringtime Widget"
+  name "Pingtime"
   desc "Live Calls and WhatsApp counts for Ringtime production and staging"
   homepage "https://github.com/Ringtime-ai/homebrew-tap"
 
